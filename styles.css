@@ -46,25 +46,25 @@ nav ul li a {
 }
 
 .heading {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    border-radius: 5px;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 .head {
-    font-size: 40px;
-    margin: 0;
+  font-size: 40px;
+  margin: 0;
 }
 
 .date {
-    color: #000;
-    padding: 5px 20px;
-    font-size: 14px;
-    margin: 0;
-    border-radius: 5px;
+  color: #000;
+  padding: 5px 20px;
+  font-size: 14px;
+  margin: 0;
+  border-radius: 5px;
 }
 
 main {
@@ -75,13 +75,15 @@ main {
 
 .welcome {
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
+  column-gap: 20px;
+  row-gap: 10px;
   margin-bottom: 20px;
 }
 
 .main-story {
-  background-image: url(./assets/Israel_UAE.jpeg);
+  background-image: url("./assets/Israel_UAE.jpeg");
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -90,6 +92,8 @@ main {
   flex-direction: column;
   justify-content: flex-end;
   min-height: 400px;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: overlay;
 }
 
 .main-story h1 {
@@ -110,7 +114,7 @@ main {
 }
 
 .story {
-  background-image: url(./assets/syringe.jpg);
+  background-image: url("./assets/borders.jpeg");
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -118,6 +122,26 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: overlay;
+}
+
+.at1 {
+    background-image: url("./assets/syringe.jpg");
+    background-color: rgba(0, 0, 0, 0.2);
+    background-blend-mode: overlay;
+  }
+
+.at2 {
+  background-image: url("./assets/online.jpg");
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: overlay;
+}
+
+.at3 {
+  background-image: url("./assets/singer.jpg");
+  background-color: rgba(0, 0, 0, 0.2);
+  background-blend-mode: overlay;
 }
 
 .story h2 {
@@ -126,31 +150,47 @@ main {
 }
 
 .category {
-  color: gray;
+    color:#A9A9A9; 
+    font-size: 12px;
+    font-weight: 700;
+    border-left: 2px solid red;
+    padding-left: 10px;
+  }
+  
+.category2 {
+  color:#c0c0c0; 
+  font-weight: 700;
   font-size: 12px;
-  border-left: 1px solid red;
+  border-left: 2px solid blue;
   padding-left: 10px;
 }
 
 .news {
-  display: grid;
+  display: flex;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
-.news-story {
-  background-image: url(./assets/Harris_Biden.jpeg);
-  background-size: cover;
-  background-position: center;
-  color: #fff;
-  padding: 10px;
+.head-2 p {
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  min-height: 200px;
+  color:#c0c0c0; 
+  font-size: 16px;
+  border-left: 2px solid red;
+  padding-left: 10px;
 }
 
+.news-story img {
+  width: 100%;
+  height: 50%;
+  background-size: contain;
+}
 .news-story h2 {
-  font-size: 18px;
+  font-size: 16px;
   margin: 0 0 5px;
+}
+
+.news-story p {
+  font-size: 14px;
+  margin: 0 0 5px;
+  color:#696969;
 }
